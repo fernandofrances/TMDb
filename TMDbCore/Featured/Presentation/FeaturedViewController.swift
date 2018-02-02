@@ -56,13 +56,14 @@ class FeaturedViewController: UIViewController {
 }
 
 extension FeaturedViewController: FeaturedView {
-    func startLoading() {
-        activityIndicator.startAnimating()
-        scrollView.isHidden = true
-    }
-    func stopLoading() {
-        activityIndicator.stopAnimating()
-        scrollView.isHidden = false
+    func setLoading(_ loading: Bool){
+        if loading {
+            scrollView.isHidden = true
+            activityIndicator.startAnimating()
+        } else {
+            scrollView.isHidden = false
+            activityIndicator.stopAnimating()
+        }
     }
     
 	func setShowsHeaderTitle(_ title: String) {
