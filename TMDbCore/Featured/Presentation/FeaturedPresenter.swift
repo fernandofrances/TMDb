@@ -50,6 +50,7 @@ final class FeaturedPresenter {
 		detailNavigator.showDetail(withIdentifier: movie.identifier,
 		                           mediaType: .movie)
 	}
+    
 }
 
 private extension FeaturedPresenter {
