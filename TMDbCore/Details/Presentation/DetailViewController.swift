@@ -105,7 +105,7 @@ private extension DetailViewController {
 		posterStripView.presenter = posterStripPresenter
 		posterStripView.title = title
 		posterStripView.items = items
-
+        
 		posterStripView.itemSelected
 			.subscribe(onNext: { [weak self] item in
 				self?.presenter.didSelect(item: item)
