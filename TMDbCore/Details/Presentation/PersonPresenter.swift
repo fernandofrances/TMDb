@@ -14,15 +14,18 @@ final class PersonPresenter: DetailPresenter {
     private let dateFormatter: DateFormatter
     private let identifier: Int64
     private let disposeBag = DisposeBag()
+    private let detailNavigator: DetailNavigator
     
     weak var view: DetailView?
     
     init(repository: PersonRepositoryProtocol,
          identifier: Int64,
-         dateFormatter: DateFormatter) {
+         dateFormatter: DateFormatter,
+         detailNavigator: DetailNavigator) {
         self.repository = repository
         self.identifier = identifier
         self.dateFormatter = dateFormatter
+        self.detailNavigator = detailNavigator
     }
     
     func didLoad() {
@@ -41,6 +44,8 @@ final class PersonPresenter: DetailPresenter {
     }
     
     func didSelect(item: PosterStripItem) {
+        detailNavigator.showDetail(withIdentifier: item.identifier,
+                                   mediaType: .movie)
     }
     
     private func detailSections(for person: PersonDetail) -> [DetailSection] {

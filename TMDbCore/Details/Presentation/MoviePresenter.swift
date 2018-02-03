@@ -30,7 +30,6 @@ final class MoviePresenter: DetailPresenter {
     
     func didLoad() {
         view?.setLoading(true)
-        
         repository.movie(withIdentifier: identifier)
             .map { [weak self] movie in
                 self?.detailSections(for: movie) ?? []

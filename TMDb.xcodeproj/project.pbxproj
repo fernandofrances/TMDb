@@ -98,6 +98,10 @@
 		99F056501F8A5A0E00A680D8 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0564F1F8A5A0E00A680D8 /* MovieRepository.swift */; };
 		99F056521F8A5B4000A680D8 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F056511F8A5B4000A680D8 /* MoviePresenter.swift */; };
 		99F056541F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F056531F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift */; };
+		E065E2AF2024E7E40066645F /* ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065E2AE2024E7E40066645F /* ShowDetail.swift */; };
+		E065E2B12024E9170066645F /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065E2B02024E9170066645F /* ShowPresenter.swift */; };
+		E065E2B32024E9520066645F /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065E2B22024E9520066645F /* ShowRepository.swift */; };
+		E065E2B52024EAC70066645F /* DetailHeader+ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065E2B42024EAC70066645F /* DetailHeader+ShowDetail.swift */; };
 		E0A0A0E8202482E10023786F /* PersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0A0E7202482E10023786F /* PersonPresenter.swift */; };
 		E0A0A0EA202483770023786F /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0A0E9202483770023786F /* PersonRepository.swift */; };
 		E0A0A0EC202483E00023786F /* PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0A0EB202483E00023786F /* PersonDetail.swift */; };
@@ -253,6 +257,10 @@
 		99F0564F1F8A5A0E00A680D8 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		99F056511F8A5B4000A680D8 /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		99F056531F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+MovieDetail.swift"; sourceTree = "<group>"; };
+		E065E2AE2024E7E40066645F /* ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetail.swift; sourceTree = "<group>"; };
+		E065E2B02024E9170066645F /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
+		E065E2B22024E9520066645F /* ShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
+		E065E2B42024EAC70066645F /* DetailHeader+ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+ShowDetail.swift"; sourceTree = "<group>"; };
 		E0A0A0E7202482E10023786F /* PersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
 		E0A0A0E9202483770023786F /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		E0A0A0EB202483E00023786F /* PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetail.swift; sourceTree = "<group>"; };
@@ -317,6 +325,8 @@
 				E0A0A0ED202488A90023786F /* DetailHeader+PersonDetail.swift */,
 				E0A0A0EF20249F100023786F /* Filmography.swift */,
 				E0A0A0F12024A5A70023786F /* PosterStripItem+Film.swift */,
+				E065E2AE2024E7E40066645F /* ShowDetail.swift */,
+				E065E2B42024EAC70066645F /* DetailHeader+ShowDetail.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -539,6 +549,7 @@
 				996EAFE01F8007070060FD98 /* DetailHeaderPresenter.swift */,
 				99F056511F8A5B4000A680D8 /* MoviePresenter.swift */,
 				E0A0A0E7202482E10023786F /* PersonPresenter.swift */,
+				E065E2B02024E9170066645F /* ShowPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -649,6 +660,7 @@
 			children = (
 				99F0564F1F8A5A0E00A680D8 /* MovieRepository.swift */,
 				E0A0A0E9202483770023786F /* PersonRepository.swift */,
+				E065E2B22024E9520066645F /* ShowRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -915,11 +927,13 @@
 				99F0564B1F8A3DBF00A680D8 /* Credits.swift in Sources */,
 				99B9A3381F73CB71004F883E /* Endpoint.swift in Sources */,
 				998AD7D81F7FEEF800D3A222 /* MediaType.swift in Sources */,
+				E065E2B52024EAC70066645F /* DetailHeader+ShowDetail.swift in Sources */,
 				99B9A34A1F74181A004F883E /* Configuration.swift in Sources */,
 				99A4653D1F7CE3B4007F3B5B /* PosterStripView.swift in Sources */,
 				993F1E801F7A9E2E004FE33B /* Person.swift in Sources */,
 				99B7FB8B1F88CDCC003CEF98 /* PhoneDetailNavigator.swift in Sources */,
 				99C5C91A1F7B92D00038688F /* Genre.swift in Sources */,
+				E065E2B32024E9520066645F /* ShowRepository.swift in Sources */,
 				99CA33E91F7B9E4700F77335 /* FeaturedViewController.swift in Sources */,
 				99A465311F7CD245007F3B5B /* DetailHeaderView.swift in Sources */,
 				E0A0A0EA202483770023786F /* PersonRepository.swift in Sources */,
@@ -927,6 +941,7 @@
 				997A442A1F7AABD10094E928 /* ImageLoadingAssembly.swift in Sources */,
 				997A441E1F7AA4110094E928 /* NibLoadableView.swift in Sources */,
 				99B7FB891F88CB4D003CEF98 /* DetailNavigator.swift in Sources */,
+				E065E2B12024E9170066645F /* ShowPresenter.swift in Sources */,
 				9943B67F1F7BFF0300D46C90 /* FeaturedPresenter.swift in Sources */,
 				997A44261F7AA9930094E928 /* SearchAssembly.swift in Sources */,
 				99F056501F8A5A0E00A680D8 /* MovieRepository.swift in Sources */,
@@ -947,6 +962,7 @@
 				99B7FB931F894298003CEF98 /* Page.swift in Sources */,
 				E0A0A0E8202482E10023786F /* PersonPresenter.swift in Sources */,
 				99F056461F8A182200A680D8 /* FeaturedRepository.swift in Sources */,
+				E065E2AF2024E7E40066645F /* ShowDetail.swift in Sources */,
 				99A4653A1F7CE21C007F3B5B /* PosterStripCell.swift in Sources */,
 				99B7FB8E1F88E4DA003CEF98 /* SearchNavigator.swift in Sources */,
 				99B7FB901F88E624003CEF98 /* PhoneSearchNavigator.swift in Sources */,

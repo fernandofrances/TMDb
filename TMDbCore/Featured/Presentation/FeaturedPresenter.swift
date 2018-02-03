@@ -70,7 +70,8 @@ private extension FeaturedPresenter {
             }
             self.view?.update(with: Array(shows))
             self.view?.update(with: Array(movies))
-            self.view?.setLoading(false)
+        }, onDisposed: { [weak self] in
+            self?.view?.setLoading(false)
         })
         .disposed(by: disposeBag)
     }

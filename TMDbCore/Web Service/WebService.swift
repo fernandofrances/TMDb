@@ -40,6 +40,7 @@ final internal class WebService {
 		return session.rx.data(request: request)
 			.map { try decoder.decode(T.self, from: $0) }
 			.catchError { error in
+                print("Error decoding o algo")
 				guard let webServiceError = error as? WebServiceError else {
 					throw error
 				}
