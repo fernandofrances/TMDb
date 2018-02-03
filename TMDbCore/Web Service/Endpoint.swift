@@ -59,7 +59,7 @@ private extension Endpoint {
         case .person(let identifier):
             return "person/\(identifier)"
         case .show(let identifier):
-            return "show/\(identifier)"
+            return "tv/\(identifier)"
         }
 	}
 	var parameters: [String: String] {
