@@ -15,7 +15,7 @@ extension DetailHeader {
         backdropPath = nil //show.backdropPath
         
         let releaseDate = dateFormatter.date(from: show.releaseDate)
-        let releaseDate = show.releaseDate.flatMap { dateFormatter.date(from: $0)}
+        //let releaseDate = show.releaseDate.flatMap { dateFormatter.date(from: $0)}
         let year = (releaseDate?.year).map { String($0) }
         let duration = "\(show.episodes) episodes."
         
