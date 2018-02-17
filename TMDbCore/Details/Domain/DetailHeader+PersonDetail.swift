@@ -11,7 +11,10 @@ extension DetailHeader {
     init(person: PersonDetail, dateFormatter: DateFormatter) {
         title = person.name
         posterPath = person.profilePath
-        backdropPath = nil
+        backdropPath = person.taggedImages.results
+            .filter { $0.aspectRatio > 1.7 }
+            .map { $0.path }
+            .first
         
         let birthdate = person.birthdate.flatMap { dateFormatter.date(from: $0)}
         let year = (birthdate?.year).map { String($0) } ?? " "

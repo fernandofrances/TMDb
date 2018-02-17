@@ -63,6 +63,7 @@ final class ShowPresenter: DetailPresenter {
             .header(DetailHeader(show: show, dateFormatter: dateFormatter))
         ]
         
+        
         detailSections.append(.about(title: "Overview", detail: show.overview))
         
         let items = show.credits?.cast.map { PosterStripItem(castMember: $0) }

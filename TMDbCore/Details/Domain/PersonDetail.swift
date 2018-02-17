@@ -15,6 +15,7 @@ struct PersonDetail: Decodable{
     let birthdate : String?
     let biography : String?
     let credits : Filmography?
+    let taggedImages: Page<TaggedImage>
     
     private enum CodingKeys: String, CodingKey {
         case identifier = "id"
@@ -23,5 +24,6 @@ struct PersonDetail: Decodable{
         case birthdate = "birthday"
         case biography
         case credits = "movie_credits"
+        case taggedImages = "tagged_images"
     }
 }
